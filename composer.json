@@ -1,8 +1,8 @@
 {
-    "name": "herzult/forum-bundle",
+    "name": "gecatalin/forum-bundle",
     "description": "A simple Symfony forum bundle.",
     "keywords": ["symfony", "forum"],
-    "homepage": "https://github.com/Herzult/HerzultForumBundle.git",
+    "homepage": "https://github.com/gecatalin/HerzultForumBundle.git",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -10,6 +10,11 @@
             "name": "Antoine Hérault",
             "email": "antoine.herault@gmail.com",
             "homepage": "https://github.com/Herzult"
+        },
+        {
+            "name": "Cenac Catalin",
+            "email": "catalin@neh.ro",
+            "homepage": "https://github.com/gecatalin"
         }
     ],
     "require": {
