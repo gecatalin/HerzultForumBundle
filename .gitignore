@@ -2,3 +2,4 @@ nbproject/
 catalog.xml
 *.tmp
 *.swp
+.idea/
