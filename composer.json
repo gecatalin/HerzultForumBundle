@@ -15,7 +15,8 @@
     "require": {
         "php": ">=5.3.0",
         "pagerfanta/pagerfanta" : "*",
-        "white-october/pagerfanta-bundle" : "*"
+        "white-october/pagerfanta-bundle" : "*",
+        "gedmo/doctrine-extensions" : "*"
     },
     "autoload": {
         "psr-0": { "Herzult\\Bundle\\ForumBundle": "." }
