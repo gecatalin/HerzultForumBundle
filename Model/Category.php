@@ -4,6 +4,7 @@ namespace Herzult\Bundle\ForumBundle\Model;
 
 use Herzult\Bundle\ForumBundle\Util\Inflector;
 
+
 abstract class Category
 {
     protected $id;
@@ -15,6 +16,7 @@ abstract class Category
     protected $numPosts;
     protected $lastTopic;
     protected $lastPost;
+    protected $forum;
 
     public function __construct()
     {
@@ -243,4 +245,24 @@ abstract class Category
     {
         return $this->name;
     }
+    public function getForum()
+    
+    {
+    
+        return $this->forum;
+    
+    }
+    
+    
+    
+    public function setForum(Forum $forum)
+    
+    {
+    
+        $this->forum = $forum;
+    
+        return $this;
+    
+    }
+    
 }

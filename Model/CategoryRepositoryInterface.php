@@ -24,4 +24,6 @@ interface CategoryRepositoryInterface extends RepositoryInterface
      * @return array An array of Category objects
      */
     function findAllIndexById();
+
+    function findAllByForum();
 }

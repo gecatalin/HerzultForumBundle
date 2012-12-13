@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping
+    xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+        http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass
+        name="Herzult\Bundle\ForumBundle\Entity\Forum"
+        table="sn_forum"
+        repository-class="Herzult\Bundle\ForumBundle\Entity\ForumRepository">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="owningEntityId" column="owningEntityId" type="integer" />
+        <field name="owningEntityClass" column="owningEntityClass" type="string" />
+    </mapped-superclass>
+
+</doctrine-mapping>
