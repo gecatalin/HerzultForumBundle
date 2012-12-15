@@ -19,6 +19,11 @@
         <service id="herzult_forum.repository.post" class="Herzult\Bundle\ForumBundle\Model\PostRepositoryInterface" factory-service="herzult_forum.object_manager" factory-method="getRepository">
             <argument type="string">%herzult_forum.model.post.class%</argument>
         </service>
+
+        <!-- Forum Repository Service -->
+        <service id="herzult_forum.repository.forum" class="Herzult\Bundle\ForumBundle\Model\ForumRepositoryInterface" factory-service="herzult_forum.object_manager" factory-method="getRepository">
+            <argument type="string">%herzult_forum.model.forum.class%</argument>
+        </service>
     </services>
 
 </container>

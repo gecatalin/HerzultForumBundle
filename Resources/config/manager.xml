@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+    	
+        <service id="herzult_forum.manager" class="%herzult_forum.manager%">
+            <argument type="service" id="herzult_forum.object_manager" />
+            <argument type="service" id="herzult_forum.repository.forum" />
+            <argument type="service" id="herzult_forum.remover.forum" />
+            <argument type="service" id="herzult_forum.remover.category" />
+            <argument type="service" id="herzult_forum.remover.topic" />
+            <argument type="service" id="herzult_forum.remover.post" />
+           
+        </service>
+    </services>
+
+</container>

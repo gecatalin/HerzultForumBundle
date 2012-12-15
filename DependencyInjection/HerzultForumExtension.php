@@ -17,6 +17,7 @@ class HerzultForumExtension extends Extension
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('model.xml');
+        $loader->load('manager.xml');
         $loader->load('controller.xml');
         $loader->load('form.xml');
         $loader->load('blamer.xml');

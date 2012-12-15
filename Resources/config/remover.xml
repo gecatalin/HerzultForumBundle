@@ -18,6 +18,17 @@
             <argument type="service" id="herzult_forum.updater.category" />
         </service>
 
+        <service id="herzult_forum.remover.category" class="%herzult_forum.remover.category.class%">
+            <argument type="service" id="herzult_forum.object_manager" />
+            <argument type="service" id="herzult_forum.remover.topic" />
+            <argument type="service" id="herzult_forum.repository.topic" />
+        </service>
+
+        <service id="herzult_forum.remover.forum" class="%herzult_forum.remover.forum.class%">
+            <argument type="service" id="herzult_forum.object_manager" />
+            <argument type="service" id="herzult_forum.remover.category" />
+            <argument type="service" id="herzult_forum.repository.category" />
+        </service>
     </services>
 
 </container>
