@@ -6,7 +6,7 @@
 
     <services>
     	
-        <service id="herzult_forum.manager" class="%herzult_forum.manager%">
+        <service id="herzult_forum.manager.forum" class="%herzult_forum.manager.forum%">
             <argument type="service" id="herzult_forum.object_manager" />
             <argument type="service" id="herzult_forum.repository.forum" />
             <argument type="service" id="herzult_forum.remover.forum" />
