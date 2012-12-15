@@ -91,7 +91,7 @@ class Configuration implements ConfigurationInterface
                             ->addDefaultsIfNotSet()
                             ->children()
                                 ->scalarNode('forum')->defaultValue('Herzult\Bundle\ForumBundle\Remover\ForumRemover')->end()
-                                ->scalarNode('forum')->defaultValue('Herzult\Bundle\ForumBundle\Remover\CategoryRemover')->end()
+                                ->scalarNode('category')->defaultValue('Herzult\Bundle\ForumBundle\Remover\CategoryRemover')->end()
                                 ->scalarNode('topic')->defaultValue('Herzult\Bundle\ForumBundle\Remover\TopicRemover')->end()
                                 ->scalarNode('post')->defaultValue('Herzult\Bundle\ForumBundle\Remover\PostRemover')->end()
                             ->end()
