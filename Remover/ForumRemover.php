@@ -13,7 +13,7 @@ class ForumRemover
     protected $categoryRepository;
     protected $categoryRemove;
 
-    public function __construct($objectManager, CategeoryRemover $categoryRemover, CategoryRepositoryInterface $categoryRepository)
+    public function __construct($objectManager, CategoryRemover $categoryRemover, CategoryRepositoryInterface $categoryRepository)
     {
         $this->categoryRemover = $categoryRemover;
         $this->objectManager   = $objectManager;
