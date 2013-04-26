@@ -1,6 +1,6 @@
 <?php
 namespace Herzult\Bundle\ForumBundle\Manager;
-use Doctrine\ORM\ObjectManager;
+use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
 use Herzult\Bundle\ForumBundle\Entity\Forum;
 use Herzult\Bundle\ForumBundle\Entity\Category;
@@ -26,7 +26,7 @@ class ForumManager
      * @param ObjectManager $em        Object manager service
      * @param string        $repository Repository name
      */
-    public function __construct(ObjectManager $em, $repository, ForumRemover $forumRemover, CategoryRemover $categoryRemover, TopicRemover $topicRemover, PostRemover $postRemover)
+    public function __construct(EntityManager $em, $repository, ForumRemover $forumRemover, CategoryRemover $categoryRemover, TopicRemover $topicRemover, PostRemover $postRemover)
     {
         $this->classname = new ClassUtils();
         $this->em         = $em;
