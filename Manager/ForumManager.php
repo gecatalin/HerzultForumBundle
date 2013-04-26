@@ -9,6 +9,7 @@ use Herzult\Bundle\ForumBundle\Entity\Post;
 use Herzult\Bundle\ForumBundle\Remover\ForumRemover;
 use Herzult\Bundle\ForumBundle\Remover\CategoryRemover;
 use Herzult\Bundle\ForumBundle\Remover\PostRemover;
+use Herzult\Bundle\ForumBundle\Remover\TopicRemover;
 use Symfony\Component\Security\Core\Util\ClassUtils;
 
 class ForumManager 
