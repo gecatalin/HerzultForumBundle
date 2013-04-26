@@ -4,8 +4,7 @@ namespace Herzult\Bundle\ForumBundle\Entity;
 
 use Herzult\Bundle\ForumBundle\Model\ForumRepositoryInterface;
 use Symfony\Component\Security\Core\Util\ClassUtils;
-use Herzult\Bundle\ForumBundle\Model\CategoryRepositoryInterface;
-class ForumRepository extends ObjectRepository implements CategoryRepositoryInterface
+class ForumRepository extends ObjectRepository implements ForumRepositoryInterface
 {
 	public function findAllByOwner($owner, $asPaginator = false)
     {
@@ -23,3 +22,4 @@ class ForumRepository extends ObjectRepository implements CategoryRepositoryInte
         return $qb->getQuery()->execute();
     }
 }
+

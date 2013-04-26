@@ -25,5 +25,5 @@ interface CategoryRepositoryInterface extends RepositoryInterface
      */
     function findAllIndexById();
 
-    function findAllByForum();
+    function findAllByForum($forum, $asPaginator = false);
 }
