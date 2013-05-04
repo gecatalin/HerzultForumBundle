@@ -11,8 +11,8 @@ class ForumRepository extends ObjectRepository implements ForumRepositoryInterfa
     	$class = new ClassUtils();
     	$class = $class->getRealClass($owner);
         $qb = $this->createQueryBuilder('forum')
-            ->where('category.objectEntityId = :forumId')
-            ->where('category.objectEntityClass = :forumClass')
+            ->where('forum.objectEntityId = :forumId')
+            ->where('forum.objectEntityClass = :forumClass')
             ->setParameter('forumId', $owner->getId())
             ->setParameter('forumClass', $class);
 

@@ -38,20 +38,10 @@ class ForumManager
         $this->postRemover = $postRemover;
     }
 
-    public function newForum($owner)
-    {
-        echo $this->repository;
-        die;
-        $forum = new $this->repository();
-        $forum->setOwningEntityId($owner->getId());
-        $forum->setOwningEntityClass($this->classname->getRealClass($owner));
-        return $forum;
-    }
     public function persistForum(Forum $forum)
     {
         $this->em->persist($forum);
         $this->em->flush();
-        return $forum;
     }
     public function getForumOwnerObject(Forum $forum)
     {
@@ -86,7 +76,6 @@ class ForumManager
      */
     private function __getRepository()
     {
-        return $this->repository;
+        return $this->em->getRepository($this->repository);
     }
 }
-
