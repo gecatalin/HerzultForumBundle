@@ -17,6 +17,8 @@ abstract class Category
     protected $lastTopic;
     protected $lastPost;
     protected $forum;
+    protected $owningEntityId;
+    protected $owningEntityClass;
 
     public function __construct()
     {
