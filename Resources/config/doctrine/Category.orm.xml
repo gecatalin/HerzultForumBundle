@@ -20,6 +20,8 @@
         <field name="position" column="position" type="integer" />
         <field name="numTopics" column="num_topics" type="integer" />
         <field name="numPosts" column="num_posts" type="integer" />
+	<field name="owningEntityId" column="owningEntityId" type="integer" />
+        <field name="owningEntityClass" column="owningEntityClass" type="string" />
 
         <lifecycle-callbacks>
             <lifecycle-callback type="prePersist" method="generateSlug" />

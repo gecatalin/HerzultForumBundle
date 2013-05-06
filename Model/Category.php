@@ -264,5 +264,44 @@ abstract class Category
         return $this;
     
     }
+
+	public function getOwningEntityId()
+	 
+	 {
+	 
+	     return $this->owningEntityId;
+	 
+	 }
+	 
+	 
+	 
+	 public function setOwningEntityId($owningEntityId)
+	 
+	 {
+	 
+	     $this->owningEntityId = $owningEntityId;
+	 
+	     return $this;
+	 
+	 }
+	 public function getOwningEntityClass()
+	 
+	 {
+	 
+	     return $this->owningEntityClass;
+	 
+	 }
+	 
+	 
+	 
+	 public function setOwningEntityClass($owningEntityClass)
+	 
+	 {
+	 
+	     $this->owningEntityClass = $owningEntityClass;
+	 
+	     return $this;
+	 
+	 }	
     
 }
